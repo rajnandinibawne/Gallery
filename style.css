@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: rgb(200, 235, 235);
+    /* max-width: 1350px;*/
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(193, 238, 249);
+    border: none;
+    border-radius: 20%;
+}
+
+button:hover {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(199, 239, 249);
+}
+
+.img {
+    /*border: 2px solid black;*/
+    height: 400px;
+    width: 23%;
+    /*margin-bottom: 44px;
+    padding: 0 20px;*/
+    /*background-color: whitesmoke;*/
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+    /*object-fit: cover;*/
+}
+
+.box-image {
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    /* position: absolute;*/
+}
+
+.box-image:hover {
+    transform: scale(1.05);
+    /* Slight zoom on hover */
+}
+
+@media (max-width: 768px) {
+    .img {
+        width: 48%;
+        /* Adjust width for smaller screens */
+    }
+    .box-image {
+        height: 200px;
+        /* Reduce image height for compact layout */
+    }
+}
+
+@media (max-width: 480px) {
+    .img {
+        width: 100%;
+        /* One image per row for narrow screens */
+    }
+    button {
+        font-size: 16px;
+        /* Smaller font for buttons */
+    }
+}
